@@ -1,5 +1,6 @@
 <!DOCTYPE html> 
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Mini Starter Kit</title>
@@ -8,204 +9,205 @@
 </head>
 
 <body>
-  <!--START WRAPPER-->
-  <div id="wrapper">
-    <!--START HEADER-->
-    <header>
-        <!-- The two boxes should be in one div with the text and hex codes in them, use in-line block to set them both side by side--->
+    <!--COLORS AND ICONS SECTION--->
+    <section class="top-section">
+        <div id="color-container">
+            <span><a>PRIMARY</a></span>
+            <div id="primarycolor-box"></div>
+            <span><a>#000000</a></span>
 
-        <div id="primarycolor-box"></div>
-        <div id="secondarycolor-box"></div>
+            <span><a>SECONDARY</a></span>
+            <div id="secondarycolor-box"></div>
+            <span><a>#FFFFFF</a></span>
 
-        <!--Icons section goes to the right of the header-->
-        <div id="icons"></div>
-
-    </header>
-    <!--END HEADER-->
-    <!--START MAIN-SECTION-->
-    <div class="main-section">
-      <!--START SIDE-BAR-->
-        <div class="side-bar">
-            <div class="#">
-                <label class="label" for="#">Text Input Default
+            <!--ICONS SECTION-->
+            <div id="icon-container">
+                <span><a>ICONS</a></span>
+            </div>
+    </section>
+    <!--END COLOR AND ICONS SECTION-->
+    <!--START ASIDE-BAR-->
+    <aside>
+        <div class="text-input">
+            <label class="label" for="#">Text Input Default
                       <input class="input" type="text" id="#" name="" value="enter text">
                      </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Text Input Error
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Text Input Error
                        <input class="input" type="text" id="#" name="" value="enter text" >
                       </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Text Input Focus
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Text Input Focus
                         <input class="input" type="text" id="#" name="" value="enter text" >
                       </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Text Input Disabled
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Text Input Disabled
                         <input class="input" type="text" id="#" name="" value="enter text" >
                        </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Number Input Default
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Number Input Default
                          <input class="input" type="text" id="#" name="" value="0" >
                         </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Number Input Focus
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Number Input Focus
                          <input class="input" type="text" id="#" name="" value="0" >
                        </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Number Input Error
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Number Input Error
                           <input class="input" type="text" id="#" name="" value="0" >
                        </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Date Input
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Date Input
                           <input class="input" type="text" id="#" name="" value="MM / DD / YYYY" >
                        </label>
-            </div>
-            <div class="#">
-                <label class="label" for="#">Dropdown Default
+        </div>
+        <div class="text-input">
+            <label class="label" for="#">Dropdown Default
                            <input class="input" type="text" id="#" name="" value="Pick an option" >
                         </label>
-            </div>
+        </div>
 
-            <p>Dropdown Default</p>
-            <div class="dropdown-container">
-                <p>Pic an option</p>
-                <ul>
-                    <li>Option Here</li>
-                    <li>Option Here</li>
-                    <li>Option Here</li>
-                    <li>Option Here</li>
-                    <li>Option Here</li>
-            </div>
-            <!--"DROP DOWN DEFAULT" and the "PICK AN OPTION" box goes here-->
-            <div class="#">
-                <label class="label" for="#">Dropdown Default
+        <span>Dropdown Default</span>
+        <div class="dropdown-container">
+            <p>Pic an option</p>
+            <ul>
+                <li>Option Here</li>
+                <li>Option Here</li>
+                <li>Option Here</li>
+                <li>Option Here</li>
+                <li>Option Here</li>
+        </div>
+
+        <!--"DROP DOWN DEFAULT" and the "PICK AN OPTION" box goes here-->
+
+        <label class="label" for="#">Dropdown Default
                            <input class="input" type="text" id="#" name="" value="Pick an option" >
                         </label>
-            </div>
 
-            <!-- CHECKBOX SECTION-->
-            <div class="checkbox-disabled">
-                <input type="checkbox" id="cbox1" value="first_checkbox">
-                <label for="cbox1">
+
+        <!-- CHECKBOX SECTION-->
+        <div class="checkbox-disabled">
+            <input type="checkbox" id="cbox1" value="first_checkbox">
+            <label for="cbox1">
                                Checkbox Disabled
                           </label>
-            </div>
-            <div class="checkbox-default">
-                <input type="checkbox" id="cbox2" value="second_checkbox">
-                <label for="cbox2">
+        </div>
+        <div class="checkbox-default">
+            <input type="checkbox" id="cbox2" value="second_checkbox">
+            <label for="cbox2">
                                Checkbox Default
                           </label>
-            </div>
-            <div class="checkbox-focus">
-                <input type="checkbox" id="cbox3" value="third_checkbox">
-                <label for="cbox3">
+        </div>
+        <div class="checkbox-focus">
+            <input type="checkbox" id="cbox3" value="third_checkbox">
+            <label for="cbox3">
                                Checkbox Focus
                           </label>
-            </div>
-            <div class="checkbox-error">
-                <input type="checkbox" id="cbox4" value="fourth_checkbox">
-                <label for="cbox4">
+        </div>
+        <div class="checkbox-error">
+            <input type="checkbox" id="cbox4" value="fourth_checkbox">
+            <label for="cbox4">
                                Checkbox Error
                           </label>
-            </div>
-            <div class="checkbox-selected">
-                <input type="checkbox" id="cbox5" value="fifth_checkbox">
-                <label for="cbox5">
+        </div>
+        <div class="checkbox-selected">
+            <input type="checkbox" id="cbox5" value="fifth_checkbox">
+            <label for="cbox5">
                                Checkbox Selected
                           </label>
-            </div>
+        </div>
 
-            <!---CIRCLE CHECK BOX SECTION------>
-            <div class="checkbox-circle">
-                <input type="radio" id="circle-cbox1" value="first_checkbox">
-                <label for="circle-cbox1">
+        <!---RADIO BUTTONS SECTION------>
+        <div class="checkbox-circle">
+            <input type="radio" id="circle-cbox1" value="first_checkbox">
+            <label for="circle-cbox1">
                                Radio Disabled
                           </label>
-            </div>
-            <div class="checkbox-circle">
-                <input type="radio" id="circle-cbox2" value="second_checkbox">
-                <label for="circle-cbox2">
+        </div>
+        <div class="checkbox-circle">
+            <input type="radio" id="circle-cbox2" value="second_checkbox">
+            <label for="circle-cbox2">
                                Radio Default
                           </label>
-            </div>
-            <div class="checkbox-circle">
-                <input type="radio" id="circle-cbox3" value="third_checkbox">
-                <label for="circle-cbox3">
+        </div>
+        <div class="checkbox-circle">
+            <input type="radio" id="circle-cbox3" value="third_checkbox">
+            <label for="circle-cbox3">
                                Radio Focus
                           </label>
-            </div>
-            <div class="checkbox-circle">
-                <input type="radio" id="circle-cbox4" value="fourth_checkbox">
-                <label for="circle-cbox4">
+        </div>
+        <div class="checkbox-circle">
+            <input type="radio" id="circle-cbox4" value="fourth_checkbox">
+            <label for="circle-cbox4">
                                Radio Error
                           </label>
-            </div>
-            <div class="checkbox-circle">
-                <input type="radio" id="circle-cbox5" value="fifth_checkbox">
-                <label for="circle-cbox5">
+        </div>
+        <div class="checkbox-circle">
+            <input type="radio" id="circle-cbox5" value="fifth_checkbox">
+            <label for="circle-cbox5">
                                Radio Selected
                           </label>
-            </div>
-            <!--PROGRESS BAR SECTION--->
-            <div class="progress-bar">
-                <progress value="45" max="100">
-                           </progress>
-                <p>45%</p>
-            </div>
-            <div class="progress-bar">
-                <progress value="45" max="100">
-               </progress>
-            </div>
-            <div class="progress-bar">
-                <progress value="100" max="100">
-                           </progress>
-                <p>You're Done!</p>
-            </div>
-
-            <!---BLACK BUTTON SECTION--->
-            <div class="primary-btn">
-                <a href="#">
-                    <button>Primary Default</button>
-                </a>
-            </div>
-            <div class="primary-btn">
-                <a href="#">
-                    <button>Primary Hover</button>
-                </a>
-            </div>
-            <div class="primary-btn">
-                <a href="#">
-                    <button>Primary Press</button>
-                </a>
-            </div>
-
-            <!---WHITE BUTTON SECTION--->
-            <div class="secondary-btn">
-                <a href="#">
-                    <button>Secondary Default</button>
-                </a>
-            </div>
-            <div class="secondary-btn">
-                <a href="#">
-                    <button>Secondary Hover</button>
-                </a>
-            </div>
-            <div class="secondary-btn">
-                <a href="#">
-                    <button>Secondary Press</button>
-                </a>
-            </div>
         </div>
-    </div>
+        <!--PROGRESS BAR SECTION--->
+        <div class="progress-bar">
+            <progress value="45" max="100">
+                           </progress>
+            <p>45%</p>
+        </div>
+        <div class="progress-bar">
+            <progress value="45" max="100">
+               </progress>
+        </div>
+        <div class="progress-bar">
+            <progress value="100" max="100">
+                           </progress>
+            <p>You're Done!</p>
+        </div>
+
+        <!---BLACK BUTTON SECTION--->
+        <div class="primary-btn">
+            <a href="#">
+                <button>Primary Default</button>
+            </a>
+        </div>
+        <div class="primary-btn">
+            <a href="#">
+                <button>Primary Hover</button>
+            </a>
+        </div>
+        <div class="primary-btn">
+            <a href="#">
+                <button>Primary Press</button>
+            </a>
+        </div>
+
+        <!---WHITE BUTTON SECTION--->
+        <div class="secondary-btn">
+            <a href="#">
+                <button>Secondary Default</button>
+            </a>
+        </div>
+        <div class="secondary-btn">
+            <a href="#">
+                <button>Secondary Hover</button>
+            </a>
+        </div>
+        <div class="secondary-btn">
+            <a href="#">
+                <button>Secondary Press</button>
+            </a>
+        </div>
+    </aside>
 
     <!--MAIN SECTION TO THE RIGHT-->
-    <div class="content">
+    <section class="main-section">
         <p>h1</p>
         <h1>Bananas and unicorns are both sweet and a little boring.</h1>
 
@@ -322,8 +324,8 @@
                             <div class="paragraph">
                              <P>I could not help it; the restlessness was in my nature; it agitated me to pain sometimes. Then my sole relief was to walk along the corridor of the third story, backwards and forwards, safe in the silence and solitude of the spot, and allow my mind’s eye to dwell on whatever bright visions rose before it—and, certainly, they were many and glowing; to let my heart be heaved by the exultant movement . . . and, best of all, to open my inward ear to a tale that was never ended—a tale my imagination created, and narrated continuously; quickened with all of incident, life, fire, feeling, that I desired and had not in my actual existence. It is in vain to say human beings ought to be satisfied with tranquility: they must have action; and they will make it if they cannot find it.</P>
                              </div>
-                      <!--4 BLACK NOTIFICATION BARS-->
 
+                      <!--4 BLACK NOTIFICATION BARS-->
                          <div class="notification-bar">
                          <label class="label" for="#">
                       <input class="bar" type="text" id="#" name="#"  placeholder="This is a generic notification">
@@ -373,10 +375,7 @@
                          <div class="cat-container">
                            <div id="cat-pic"></div>
                            <p>Hi, we're kittens! You should feel comfortable and happy when you look at us cuddling in this basket.</p>
-                             </div>
-
-
                          </div>
-              </div><!--END OF WRAPPER-->
+              </section><!--END OF WRAPPER-->
              </body>
            </html>

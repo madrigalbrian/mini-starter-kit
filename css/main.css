@@ -1,1 +1,43 @@
-/*HEADER*/
+/*top section*/
+.top-section{
+  width: 100%;
+  height: 20%;
+}
+/*COLORS*/
+
+
+
+/*ICONS*/
+
+
+/*aside*/
+aside {
+  width: 30%;
+  float: left;
+}
+
+/*INPUTS*/
+
+
+/*DROPDOWN*/
+
+
+/*CHECKBOXES*/
+
+
+/*RADIO-BUTTONS*/
+
+
+/*PROGRESS-BARS*/
+
+
+/*PRIMARY-BUTTONS*/
+
+/*SECONDARY-BUTTONS*/
+
+
+/*main-section*/
+.main-section{
+  width: 65%;
+  float: left;
+}
