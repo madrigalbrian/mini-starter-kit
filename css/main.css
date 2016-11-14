@@ -8,7 +8,7 @@ aside {
   width: 30%;
   float: left;
 }
-.main-section{
+main {
   width: 65%;
   float: left;
 }
@@ -75,3 +75,41 @@ xmp {
 
 
 /*main-section*/
+/*H1,2,3,4,5,6*/
+
+
+/*<LARGE, PARAGRAPH, SMALL> SECTION*/
+
+/*TWO COLUMNS SECTION*/
+
+/*ABOUT JUMP ROPES SECTION*/
+
+/*TWO LISTS SECTION*/
+
+
+/*QUOTE SECTION*/
+
+/*TABLE*/
+
+
+/*BLACK BOX PARAGRAPH*/
+#black-paragraph{
+  background-color: #000;
+  color: white;
+  width: 100%;
+  height: 300px;
+}
+#white-text{
+  padding: 25px 20px 23px 23px;
+  font-weight: 100;
+  margin: 15px 0px 15px 0px;
+}
+
+/*NOTIFICATION BARS*/
+
+
+/*SELECT BAR*/
+
+/*CODE*/
+
+/*CAT PICTURE*/
