@@ -253,20 +253,20 @@
                              <p>Once a journey is designed, equipped, and put in process, a new factor enters and takes over. It has personality, temperament, individuality, uniqueness. A journey is a person in itself; no two are alike. And all plans, safeguards, policing, and coercion are fruitless.
                We find after years of struggle that we do not take a trip; a trip takes us. Only when this is recognized can the blown-in-the glass bum relax and go along with it. Only then do the frustrations fall away. In this a journey is like marriage. The certain way to be wrong is to think you control it.</p>
 
-
-                            <div class="somemoretext-section-left">
-                               <p>This is some more text</p>
-                               <p>This is some more text</p>
-                               <p>This is some more text</p>
-                               <p>This is some more text</p>
+                          <div class="twocolumn-container">
+                            <div class="moretext-left">
+                               <p id="bold">This is some more text</p>
+                               <p id="underline">This is some more text</p>
+                               <p id="italic_bold">This is some more text</p>
+                               <p id="strikethrough">This is some more text</p>
                              </div>
-                             <div class="somemoretext-section-right">
-                               <p>This is some more text</p>
-                               <p>This is some more text</p>
-                               <code>here</code>
-                               <p>Charles Barkley</p>
+                             <div class="moretext-right">
+                               <p id="bold_underline">This is some more text</p>
+                               <p id="underline">This is some more text</p>
+                               <div id="code_box"><xmp><code>here</code></xmp></div>
+                               <div id="name_box"><p>Charles Barkley</p></div>
                              </div>
-
+                           </div>
                              <!-- NEW SECTION-->
 
                              <h1>About jump ropes</h1><!--this has to be underlined-->
@@ -274,27 +274,36 @@
                              <p>Charles Barkley continued to speak out about race relations and police in America in an interview with CNN that aired on Wednesday, saying that he didn’t think.</p>
 
                              <!--NEW SECTION, LISTED ITEMS. TWO COLLUNMS LEFT AND RIGHT-->
-
+                          <div class="list-container">
+                            <div class="bullet-list">
+                            <span><p class="list-header">List Header</p></span>
                              <ul>
                                <li>First Bullet Here</li>
                                <li>Second Bullet Here</li>
                                <li>Third Bullet Here</li>
                                <li>Fourth Bullet Here</li>
                               </ul>
-
-
+                            </div>
+                            <div class="number-list">
+                              <span><p class="list-header">List Header</p></span>
                              <ol>
                                <li>First Bullet Here</li>
                                <li>Second Bullet Here</li>
                                <li>Third Bullet Here</li>
-                               <!--There has to be two nested items here-->
-                               <li>Fourth Bullet Here</li>
-                             </ol>
-
+                               <ul>
+                                  <li>Nested</li>
+                                    <ul>
+                                      <li>Nested Nested</li>
+                                    </ul>
+                                </ul>
+                              <li>Fourth Bullet Here</li>
+                              </ol>
+                              </div>
+                            </div>
 
                              <!-- NEW SECTION-->
-                             <h1>
-                               “ It is in vain to say human beings ought to be satisfied with tranquility: they must have action; and they will make it if they cannot find it.”
+                             <h1 id="quote">
+                               “It is in vain to say human beings ought to be satisfied with tranquility: they must have action; and they will make it if they cannot find it.”
                              </h1>
 
                              <!---TABLE SECTION-->
@@ -362,19 +371,19 @@
 
 
                      <!-- BLACK BOX, WITH HTML CODE-->
-                         <div class="code-rectangle">
-                             <xmp>
-                           <!DOCTYPE html>
-                           <html>
-                             <head>
-                               <meta charset="UTF-8">
-                                 <title>Title of the document</title>	</head>
-                             <body>
-                               Content of the document......
-                             </body>
-                           </html>
-                         </xmp>
-                             </div>
+               <div class="code-rectangle">
+                  <xmp id="code">
+                   <!DOCTYPE html>
+                   <html>
+                      <head>
+                       <meta charset="UTF-8">
+                        <title>Title of the document</title></head>
+                        <body>
+                         Content of the document......
+                        </body>
+                     </html>
+                    </xmp>
+                  </div>
 
                          <!--BLACK BOX WITH A PICTURE OF CATS AND A WHITE TEXT CAPTION-->
 

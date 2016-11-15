@@ -10,8 +10,9 @@ aside {
   margin-left: 47px;
 }
 main {
-  width: 65%;
+  width: 528px;
   float: left;
+  margin-left: 113px;
 }
 .pink {
   color: #F014AF;
@@ -25,21 +26,22 @@ xmp {
   display: ;
 }
 #primarycolor-box{
-  width: 20%;
+  width: 145px;
   float: left;
   margin-left: 47px;
+  margin-right: 16px;
 }
 #secondarycolor-box{
   width: 20%;
   float: left;
 }
 #blackbox {
-  width:150px;
+  width:145px;
 	height:100px;
   background-color: #000;
 }
 #whitebox{
-  width:150px;
+  width:145px;
 	height:100px;
   background-color: #FFF;
   outline: 1px solid #000;
@@ -78,19 +80,108 @@ xmp {
 
 /*main-section*/
 /*H1,2,3,4,5,6*/
-
-
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+h2{
+  font-weight: bold;
+  font-size: 48px;
+}
+h3{
+  font-weight: bold;
+  font-size: 36px;
+}
+h4{
+  font-weight: bold;
+  font-size: 24px;
+}
+h5{
+  font-weight: bold;
+  font-size: 20px;
+}
+h6{
+  font-weight: bold;
+  font-size: 18px;
+}
 /*<LARGE, PARAGRAPH, SMALL> SECTION*/
 
 /*TWO COLUMNS SECTION*/
-
+.twocolumn-container{
+  overflow: auto;
+}
+.moretext-left{
+  width: 175px;
+  margin-right: 63px;
+  float: left;
+}
+.moretext-right{
+  width: 175px;
+  float: left;
+}
+#bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+#underline {
+  text-decoration: underline;
+  font-size: 16px;
+}
+#italic_bold {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+#strikethrough {
+  text-decoration: line-through;
+  font-size: 16px;
+}
+#bold_underline {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+}
+#underline {
+  text-decoration: underline;
+  font-size: 16px;
+}
+#code_box {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  width: 165px;
+  height: 24px;
+}
+#name_box {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  width: 118px;
+  height: 24px;
+}
 /*ABOUT JUMP ROPES SECTION*/
 
-/*TWO LISTS SECTION*/
 
+/*TWO LISTS SECTION*/
+.list-container{
+  overflow: auto;
+}
+.bullet-list{
+  width: 175px;
+  margin-right: 63px;
+  float: left;
+}
+.number-list{
+  width: 175px;
+  float: left;
+}
 
 /*QUOTE SECTION*/
-
+#quote{
+  font-style: italic;
+  font-weight: bold oblique;
+  font-size: 36px;
+}
 /*TABLE*/
 
 
@@ -113,5 +204,15 @@ xmp {
 /*SELECT BAR*/
 
 /*CODE*/
+.code-rectangle{
+  background-color: #000;
+  color: white;
+  width: 100%;
+  height: 300px;
+}
+#code{
+  color: white;
+  font-size: 16px;
+}
 
 /*CAT PICTURE*/
