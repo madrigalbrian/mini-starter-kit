@@ -5,8 +5,9 @@
   overflow: auto;
 }
 aside {
-  width: 30%;
+  width: 209px;
   float: left;
+  margin-left: 47px;
 }
 main {
   width: 65%;
@@ -24,11 +25,12 @@ xmp {
   display: ;
 }
 #primarycolor-box{
-  width: 30%;
+  width: 20%;
   float: left;
+  margin-left: 47px;
 }
 #secondarycolor-box{
-  width: 30%;
+  width: 20%;
   float: left;
 }
 #blackbox {
@@ -44,7 +46,7 @@ xmp {
 }
 /*ICONS*/
 #icon-container{
-  width: 30%;
+  width: 20%;
   float: left;
 }
 #blankbox{
