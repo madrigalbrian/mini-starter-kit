@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mini Starter Kit</title>
+    <title>Mini Starter </title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
 </head>
@@ -32,181 +32,150 @@
     <!--END COLOR AND ICONS SECTION-->
     <!--START ASIDE-BAR-->
     <aside>
-        <div class="text-input">
-            <label class="label" for="#">Text Input Default
-                      <input class="input" type="text" id="#" name="" value="enter text">
+        <form action="textinput-form">
+            <div class="text-input">
+                <label class="label1" for="#">Text Input Default
+                      <input class="input1" type="text" id="input" name="" value="enter text">
                      </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Text Input Error
-                       <input class="input" type="text" id="#" name="" value="enter text" >
+            </div>
+            <div class="text-input">
+                <label class="label2" for="#">Text Input Error
+                       <input class="input2" type="text" id="input" name="" value="enter text" >
                       </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Text Input Focus
-                        <input class="input" type="text" id="#" name="" value="enter text" >
+            </div>
+            <div class="text-input">
+                <label class="label3" for="#">Text Input Focus
+                        <input class="input3" type="text" id="input" name="" value="enter text" >
                       </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Text Input Disabled
-                        <input class="input" type="text" id="#" name="" value="enter text" >
+            </div>
+            <div class="text-input">
+                <label class="label4" for="#">Text Input Disabled
+                        <input class="input4" type="text" name="" value="enter text" >
                        </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Number Input Default
-                         <input class="input" type="text" id="#" name="" value="0" >
+            </div>
+            <div class="text-input">
+                <label class="label5" for="#">Number Input Default
+                         <input class="input5" type="text" id="input" name="" value="0" >
                         </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Number Input Focus
-                         <input class="input" type="text" id="#" name="" value="0" >
+            </div>
+            <div class="text-input">
+                <label class="label6" for="#">Number Input Focus
+                         <input class="input6" type="text"  name="" value="0" >
                        </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Number Input Error
-                          <input class="input" type="text" id="#" name="" value="0" >
+            </div>
+            <div class="text-input">
+                <label class="label7" for="#">Number Input Error
+                          <input class="input7" type="text" id="input" name="" value="0" >
                        </label>
-        </div>
-        <div class="text-input">
-            <label class="label" for="#">Date Input
-                          <input class="input" type="text" id="#" name="" value="MM / DD / YYYY" >
+            </div>
+            <div class="text-input">
+                <label class="label8" for="#">Date Input
+                          <input class="input8" type="date" id="input" name="" value="MM / DD / YYYY" >
                        </label>
-        </div>
+            </div>
+        </form>
+
         <div class="text-input">
-            <label class="label" for="#">Dropdown Default
-                           <input class="input" type="text" id="#" name="" value="Pick an option" >
+            <label class="" for="#">Dropdown Default
+                           <input class="dropdown1" type="text" id="" name="" value="Pick an option" >
                         </label>
         </div>
 
-        <span>Dropdown Default</span>
         <div class="dropdown-container">
-            <p>Pic an option</p>
-            <ul>
-                <li>Option Here</li>
-                <li>Option Here</li>
-                <li>Option Here</li>
-                <li>Option Here</li>
-                <li>Option Here</li>
+            <span>Dropdown Default</span>
+            <div class="dropdown2">
+                <label class="label-dropdown">Pick an option</label>
+                <ul>
+                    <li>Option Here</li>
+                    <li>Option Here</li>
+                    <li>Option Here</li>
+                    <li class="black_li">Option Here</li>
+                    <li>Option Here</li>
+            </div>
         </div>
-
         <!--"DROP DOWN DEFAULT" and the "PICK AN OPTION" box goes here-->
 
-        <label class="label" for="#">Dropdown Default
-                           <input class="input" type="text" id="#" name="" value="Pick an option" >
-                        </label>
+        <label class="label4" for="#">Dropdown Default
+          <input class="input4" type="text" id="#" name="" value="Pick an option" >
+        </label>
 
 
         <!-- CHECKBOX SECTION-->
-        <div class="checkbox-disabled">
-            <input type="checkbox" id="cbox1" value="first_checkbox">
-            <label for="cbox1">
-                               Checkbox Disabled
-                          </label>
-        </div>
-        <div class="checkbox-default">
-            <input type="checkbox" id="cbox2" value="second_checkbox">
-            <label for="cbox2">
-                               Checkbox Default
-                          </label>
-        </div>
-        <div class="checkbox-focus">
-            <input type="checkbox" id="cbox3" value="third_checkbox">
-            <label for="cbox3">
-                               Checkbox Focus
-                          </label>
-        </div>
-        <div class="checkbox-error">
-            <input type="checkbox" id="cbox4" value="fourth_checkbox">
-            <label for="cbox4">
-                               Checkbox Error
-                          </label>
-        </div>
-        <div class="checkbox-selected">
-            <input type="checkbox" id="cbox5" value="fifth_checkbox">
-            <label for="cbox5">
-                               Checkbox Selected
-                          </label>
-        </div>
-
+        <form action="checkbox-form">
+            <fieldset>
+              <label class="control control--checkbox">Checkbox Disabled
+                <input type="checkbox" disabled="disabled"/>
+                <div class="control__indicator"></div>
+              </label>
+              <label class="control control--checkbox">Checkbox Default
+                <input type="checkbox"/>
+                <div class="control__indicator"></div>
+              </label>
+              <label class="control control--checkbox">Checkbox Focus
+                <input type="checkbox" />
+                <div class="control__indicator"></div>
+              </label>
+              <label class="control control--checkbox">Checkbox Error
+                <input type="checkbox" checked="checked"/>
+                <div class="control__indicator"></div>
+              </label>
+              <label class="control control--checkbox">Checkbox Selected
+                <input type="checkbox" checked="checked"/>
+                <div class="control__indicator"></div>
+              </label>
+            </fieldset>
+        </form>
         <!---RADIO BUTTONS SECTION------>
-        <div class="checkbox-circle">
-            <input type="radio" id="circle-cbox1" value="first_checkbox">
-            <label for="circle-cbox1">
-                               Radio Disabled
-                          </label>
-        </div>
-        <div class="checkbox-circle">
-            <input type="radio" id="circle-cbox2" value="second_checkbox">
-            <label for="circle-cbox2">
-                               Radio Default
-                          </label>
-        </div>
-        <div class="checkbox-circle">
-            <input type="radio" id="circle-cbox3" value="third_checkbox">
-            <label for="circle-cbox3">
-                               Radio Focus
-                          </label>
-        </div>
-        <div class="checkbox-circle">
-            <input type="radio" id="circle-cbox4" value="fourth_checkbox">
-            <label for="circle-cbox4">
-                               Radio Error
-                          </label>
-        </div>
-        <div class="checkbox-circle">
-            <input type="radio" id="circle-cbox5" value="fifth_checkbox">
-            <label for="circle-cbox5">
-                               Radio Selected
-                          </label>
-        </div>
+        <form action="radiobtn-form">
+            <fieldset>
+            <label class="control control--checkbox">Radio Disabled
+          		<input type="radio" disabled="disabled"/>
+          		<div class="control--radio control__indicator"></div>
+          	</label>
+            <label class="control control--checkbox">Radio Default
+          		<input type="radio"/>
+          		<div class="control--radio control__indicator"></div>
+          	</label>
+            <label class="control control--checkbox">Radio Focus
+          		<input type="radio" focused/>
+          		<div class="control--radio control__indicator"></div>
+          	</label>
+            <label class="control control--checkbox">Radio Error
+          		<input type="radio" checked="checked"/>
+          		<div class="control--radio control__indicator"></div>
+          	</label>
+            <label class="control control--checkbox">Radio Selected
+          		<input type="radio" checked="checked"/>
+          		<div class="control--radio control__indicator"></div>
+          	</label>
+            </fieldset>
+        </form>
         <!--PROGRESS BAR SECTION--->
-        <div class="progress-bar">
-            <progress value="45" max="100">
-                           </progress>
-            <p>45%</p>
-        </div>
-        <div class="progress-bar">
-            <progress value="45" max="100">
-               </progress>
-        </div>
-        <div class="progress-bar">
-            <progress value="100" max="100">
-                           </progress>
-            <p>You're Done!</p>
-        </div>
+        <div class="progress-container">
+            <progress value="45" max="100"></progress>
+            <span class="Progress-label" id="Progress-id">45%</span>
+          </div>
+            <progress value="45" max="100"></progress>
+        <div class="progress-container2">
+            <progress value="100" max="100"></progress>
+            <span class="Progress-label" id="Progress-id">You're Done!</span>
+          </div>
 
-        <!---BLACK BUTTON SECTION--->
-        <div class="primary-btn">
-            <a href="#">
-                <button>Primary Default</button>
-            </a>
-        </div>
-        <div class="primary-btn">
-            <a href="#">
-                <button>Primary Hover</button>
-            </a>
-        </div>
-        <div class="primary-btn">
-            <a href="#">
-                <button>Primary Press</button>
-            </a>
-        </div>
+        <!---PRIMARY BUTTON--->
+        <div class="primarybtn-container">
+            <button class="primary-btn">Primary Default</button>
 
-        <!---WHITE BUTTON SECTION--->
-        <div class="secondary-btn">
-            <a href="#">
-                <button>Secondary Default</button>
-            </a>
+            <button class="primary-btn" id="underline">Primary Hover</button>
+
+            <button class="primary-btn" id="underline">Primary Press</button>
         </div>
-        <div class="secondary-btn">
-            <a href="#">
-                <button>Secondary Hover</button>
-            </a>
-        </div>
-        <div class="secondary-btn">
-            <a href="#">
-                <button>Secondary Press</button>
-            </a>
+        <!---SECONDARY BUTTON--->
+        <div class="secondarybutton-container">
+            <button class="secondary-button">Secondary Default</button>
+
+            <button class="secondary-button" id="underline">Secondary Hover</button>
+
+            <button class="secondary-button" id="underline">Secondary Press</button>
         </div>
     </aside>
 
@@ -234,7 +203,6 @@
         <xmp>
             <large>
         </xmp>
-
         <P>Once a journey is designed, equipped, and put in process, a new factor enters and takes over. It has personality, temperament, individuality, uniqueness. A journey is a person in itself; no two are alike. And all plans, safeguards, policing, and
             coercion are fruitless. We find after years of struggle that we do not take a trip; a trip takes us. Only when this is recognized can the blown-in-the glass bum relax and go along with it. Only then do the frustrations fall away. In this a
             journey is like marriage. The certain way to be wrong is to think you control it.</P>
@@ -242,15 +210,12 @@
         <xmp>
             <paragraph>
         </xmp>
-
-
         <P>Once a journey is designed, equipped, and put in process, a new factor enters and takes over. It has personality, temperament, individuality, uniqueness. A journey is a person in itself; no two are alike. And all plans, safeguards, policing, and
             coercion are fruitless. We find after years of struggle that we do not take a trip; a trip takes us. Only when this is recognized can the blown-in-the glass bum relax and go along with it. Only then do the frustrations fall away. In this a
             journey is like marriage. The certain way to be wrong is to think you control it.</P>
 
         <xmp><small></xmp>
-
-                             <p>Once a journey is designed, equipped, and put in process, a new factor enters and takes over. It has personality, temperament, individuality, uniqueness. A journey is a person in itself; no two are alike. And all plans, safeguards, policing, and coercion are fruitless.
+          <p>Once a journey is designed, equipped, and put in process, a new factor enters and takes over. It has personality, temperament, individuality, uniqueness. A journey is a person in itself; no two are alike. And all plans, safeguards, policing, and coercion are fruitless.
                We find after years of struggle that we do not take a trip; a trip takes us. Only when this is recognized can the blown-in-the glass bum relax and go along with it. Only then do the frustrations fall away. In this a journey is like marriage. The certain way to be wrong is to think you control it.</p>
 
                           <div class="twocolumn-container">
@@ -314,24 +279,29 @@
                                    <th>Column</th>
                                  </tr>
                                  <tr>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
+                            <span>Row</span><td>Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
                                  </tr>
                                  <tr>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
                                  </tr>
                                  <tr>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
                                  </tr>
                                  <tr>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
-                                   <td>Row Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
+                                   <td>Data Here</td>
+                                 </tr>
+                                 <tr>
+                                   <th>Footer</th>
+                                   <th>Footer</th>
+                                   <th>Footer</th>
                                  </tr>
                              </table>
 
@@ -364,16 +334,14 @@
 
                     <!--one white select bar with a browse button-->
                           <div class="select-bar">
-                         <label class="label" for="#">
-                      <input class="bar" type="text" id="#" name="#" placeholder="Select a file ...">
-                     </label>
+                      <input type="search" id="search-bar" name="#" placeholder="Select a file ...">
+                      <button class="button">Browse</button>
                             </div>
 
 
                      <!-- BLACK BOX, WITH HTML CODE-->
                <div class="code-rectangle">
-                  <xmp id="code">
-                   <!DOCTYPE html>
+    <xmp id="code"><!DOCTYPE html>
                    <html>
                       <head>
                        <meta charset="UTF-8">
@@ -381,14 +349,13 @@
                         <body>
                          Content of the document......
                         </body>
-                     </html>
-                    </xmp>
+                     </html></xmp>
                   </div>
 
                          <!--BLACK BOX WITH A PICTURE OF CATS AND A WHITE TEXT CAPTION-->
 
                          <div class="cat-container">
-                           <div id="cat-pic"></div>
+                           <img src="/images/cats.jpg" id="cat-pic" alt="Cats Hugging">
                            <p>Hi, we're kittens! You should feel comfortable and happy when you look at us cuddling in this basket.</p>
                          </div>
               </main><!--END OF WRAPPER-->
