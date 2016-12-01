@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 /*BASESTYLES*/
 .top-section{
   width: 100%;
@@ -13,13 +16,9 @@ main {
   width: 528px;
   float: left;
   margin-left: 113px;
+  margin-top: 20px;
 }
-.pink {
-  color: #F014AF;
-}
-xmp {
-  color: #F014AF;
-}
+
 /*top section*/
 /*COLORS*/
 #color-container{
@@ -65,10 +64,6 @@ xmp {
 /*LABELS*/
 
 
-.label4{
-  text-decoration: line-through;
-}
-
 /*INPUTS*/
 .input1{
   border: 1px solid black;
@@ -108,7 +103,7 @@ xmp {
   background-color: black;
   color: white;
 }
-#input {
+.input {
   width: 208px;
   height: 48px;
   border: 2px solid black;
@@ -131,11 +126,19 @@ xmp {
 .dropdown2{
   border: 2px solid black;
   margin-bottom: 54px;
+  text-indent: 15px;
 }
-ul{
-  list-style-type: none;
-  text-indent: -22px;
+#option-title{
+  font-style: italic;
+  line-height: 30px;
+
 }
+.options-list{
+  line-height: 24px;
+  list-style: none;
+  padding-left: 0px;
+}
+
 .black_li{
   background-color: black;
   color: white;
@@ -194,7 +197,20 @@ progress {
   appearance: none;
   width: 242px;
   height: 16px;
-  border-radius: 2px;
+  border-radius: 1px;
+}
+#progress-id{
+  background-color: #fff;
+  width: 240px;
+  height: 8px;
+  border-radius: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+#progress-id[value]{
+  background-color: #fff;
+  width: 240px;
+  height: 8px;
+  border-radius: 1px;
 }
 progress[value]::-webkit-progress-bar {
   background-color: #fff;
@@ -214,6 +230,72 @@ progress[value]::-webkit-progress-value {
 }
 .progress-container2{
   margin-top: 32px;
+}
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: #2aa1c0;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: #0e647d;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 4px;
+	left: 8px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+	background: #7b7b7b;
 }
 
 /*PRIMARY-BUTTONS*/
@@ -257,39 +339,64 @@ text-decoration: underline;
 
 /*main-section*/
 /*H1,2,3,4,5,6*/
-h1 {
-  text-decoration: underline;
+#header1{
   font-weight: bold;
   font-size: 60px;
-  margin-top: 78px;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
 }
-h2{
+#header2{
   font-weight: bold;
   font-size: 48px;
+  margin-bottom: 31px;
 }
-h3{
+#header3{
   font-weight: bold;
   font-size: 36px;
+  margin-bottom: 32px;
 }
-h4{
+#header4{
   font-weight: bold;
   font-size: 24px;
+  margin-bottom: 35px;
 }
-h5{
+#header5{
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 74px;
 }
-h6{
+#header6{
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 120px;
+}
+.pink{
+  color: #F014AF;
 }
 /*<LARGE, PARAGRAPH, SMALL> SECTION*/
+.text{
+  letter-spacing: -0.2px;
+  margin-bottom: 75px;
+}
+#large{
+  font-size: 18px;
+  line-height: 30px;
+}
+#paragraph{
+  line-height: 26px;
+}
+#small{
+  font-size: 12px;
+  line-height: 21px;
+}
+
 
 /*TWO COLUMNS SECTION*/
-.twocolumn-container{
+.moretext-container{
   overflow: auto;
   margin-top: 58px;
+  margin-bottom: 104px;
+  line-height: 49px;
+  height: 220px;
 }
 .moretext-left{
   width: 175px;
@@ -300,18 +407,16 @@ h6{
   width: 175px;
   float: left;
 }
-#bold {
+.bold {
   font-weight: bold;
   font-size: 16px;
 }
-#underline {
+.underline {
   text-decoration: underline;
   font-size: 16px;
 }
-#italic_bold {
-  font-weight: bold;
+.italic{
   font-style: italic;
-  font-size: 16px;
 }
 #strikethrough {
   text-decoration: line-through;
@@ -322,11 +427,8 @@ h6{
   font-size: 16px;
   text-decoration: underline;
 }
-#underline {
-  text-decoration: underline;
-  font-size: 16px;
-}
-#code_box {
+
+.code_box {
   font-size: 16px;
   background-color: black;
   color: white;
@@ -342,6 +444,24 @@ h6{
 }
 /*ABOUT JUMP ROPES SECTION*/
 
+.header_underline {
+      font-size: 60px;
+      border-bottom: solid 2px #000000;
+      display: inline;
+      padding-bottom: 3px;
+}
+
+#sub-title {
+  margin-top: 31px;
+  margin-bottom: 27px;
+  color: #2F2F2F;
+  font-size: 36px;
+}
+#title-description {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.2px
+}
 
 /*TWO LISTS SECTION*/
 .list-container{
@@ -352,27 +472,34 @@ h6{
   width: 175px;
   margin-right: 63px;
   float: left;
+  line-height: 28px;
 }
 .number-list{
-  width: 175px;
   float: left;
+  line-height: 28px;
 }
-
+.list-header{
+  font-weight: bold;
+}
 /*QUOTE SECTION*/
 #quote{
   font-style: italic;
-  font-weight: bold oblique;
+  font-weight: bold;
   font-size: 36px;
   margin-top: 35px;
+  text-decoration: none;
 }
 /*TABLE*/
 table{
   margin-top: 100px;
   width: 608px;
   height: 256px;
+  border-collapse: collapse;
+  text-align: left;
 }
 th, td {
     border-bottom: 1px solid #ddd;
+    padding: 7px;
 }
 th{
   background-color: black;
@@ -383,14 +510,15 @@ th{
   background-color: #000;
   color: white;
   width: 590px;
-  height: 300px;
+  height: 386px;
   margin-bottom: 75px;
   margin-top: 100px;
 }
 #white-text{
-  padding: 25px 20px 23px 23px;
-  font-weight: 100;
-  margin: 15px 0px 15px 0px;
+  padding: 54px 46px 54px 46px;
+  font-weight: normal;
+  line-height: 23px;
+  letter-spacing: -0.2px
 }
 
 /*NOTIFICATION BARS*/
@@ -407,48 +535,63 @@ th{
    width: 529px;
    height: 48px;
 }
+.bar::-webkit-input-placeholder {
+   color: white;
 
+}
 
 /*SELECT BAR*/
-.select-bar{
+.search-wrapper{
   margin-top: 48px;
+  border: 2px solid black;
+  border-radius: 4px;
 }
-#search-bar{
+
+.search-box{
+  padding: 0px 0px 0px 33px;
+  border: 0px solid;
   background-color: white;
    background-position: 10px 10px;
    background-repeat: no-repeat;
-   padding-left: 40px;
-   border: 2px solid black;
-   border-radius: 4px;
-   width: 100%;
+   width: 70%;
    height: 48px;
 }
-.button {
+.browse-icon {
     background-color: #000; /* Black */
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     width: 124px;
     height: 37px;
+    margin: 0px 0px 0px 23px;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
 }
+.browse-icon:after{
 
+}
+.search-box::-webkit-input-placeholder {
+   color: black;
+   font-style: italic;
+}
 /*CODE*/
-.code-rectangle{
+.code-container{
   background-color: #000;
-  color: white;
   width: 100%;
   height: 300px;
   margin-top: 48px;
+  border-radius: 4px;
 }
 
-#code{
+#blank-code{
   color: white;
   font-size: 16px;
+  font-family: helvetica;
+  padding: 34px 65px 42px 11px;
+
 }
 
 /*CAT PICTURE*/
@@ -463,4 +606,7 @@ th{
 #cat-pic{
   width: 527px;
   height: 349px;
+}
+.cat-description{
+  padding: 15px 24px 23px 33px;
 }
